@@ -144,7 +144,7 @@ mark {
 
 
 /* contact */
-#contact {}
+
 
 .contact {
     justify-content: center;
@@ -165,7 +165,7 @@ mark {
 
 @media only screen and (max-width: 950px) {
     .explanation h2 {
-        font-size: 200%;
+        font-size: 190%;
     }
 
 
@@ -192,6 +192,11 @@ mark {
 }
 
 @media only screen and (max-width: 768px) {
+    .button_blue {
+        width: 360px !important;
+
+
+    }
 
     .portfolio h2 {
         color: white;
@@ -236,9 +241,13 @@ mark {
         justify-content: center;
     }
 
+    .contact {
+        padding: 0px;
+    }
+
     .contact h2 {
-        font-size: 200%;
-        padding: 10px;
+        font-size: 1.5rem !important;
+        padding: 0px;
     }
 
     #contact {
@@ -299,6 +308,11 @@ mark {
         margin-top: 20px;
     }
 
+    .button_blue {
+        width: 200px !important;
+
+    }
+
     .text_land h4 {
         text-align: center;
     }
@@ -312,8 +326,17 @@ mark {
         width: 180px !important;
     }
 
+    .contact {
+        justify-content: center;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
     .contact img {
-        display: none;
+        display: flex;
+        margin-top: 20px;
     }
 
 
@@ -332,7 +355,9 @@ mark {
         padding: 17px 40px;
     }
 
-
+    .portfolio h2 {
+        font-size: 118%;
+    }
 
     .text_land h4 {
         display: flex;
@@ -367,38 +392,34 @@ mark {
 
 /* FEATURES */
 .button_blue {
-    text-decoration: none;
-    appearance: button;
-    background-color: #1899D6;
-    border: solid transparent;
-    border-radius: 16px;
-    border-width: 0 0 4px;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-block;
-    font-family: din-round, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: .8px;
-    line-height: 20px;
-    margin: 0;
-    outline: none;
-    overflow: visible;
-    padding: 13px 16px;
-    text-align: center;
-    text-transform: uppercase;
-    touch-action: manipulation;
-    transform: translateZ(0);
-    transition: filter .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-
+    background-image: linear-gradient(90deg, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgb(65 132 234 / 75%);
 }
 
-.button_blue:after {
+
+
+.button_blue {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-decoration: none;
+    width: 360px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+/* .button_blue:after {
     background-clip: padding-box;
     background-color: #1CB0F6;
     border: solid transparent;
@@ -426,7 +447,7 @@ mark {
 
 .button_blue:disabled {
     cursor: auto;
-}
+} */
 
 /*  */
 .button_rotation {
@@ -444,8 +465,6 @@ mark {
     transform-style: preserve-3d;
     transform: translateZ(-25px);
     transition: transform .25s;
-    font-family: 'Montserrat', sans-serif;
-
 }
 
 .button_rotation a:before,
