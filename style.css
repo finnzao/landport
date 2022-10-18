@@ -1,6 +1,10 @@
 :root {
-    --primary: #32c2b9;
-    --second: #00686c;
+    /* --primary: #32c2b9; */
+    /* --second: #00686c; */
+    --primary: #184848;
+    --second: #007878;
+    --third: #006060;
+    --font: #f0f0d8;
 }
 
 *,
@@ -21,9 +25,19 @@ body {
     color: white;
 }
 
+.menu_mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 35vh;
+    background-color: var(--second);
+    display: none;
+    height: 100vh;
+}
+
 mark {
     background-color: transparent;
-    color: var(--second);
+    color: #a8c030;
 }
 
 .container {
@@ -54,6 +68,11 @@ mark {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hamburguer {
+    display: none;
+    margin: 10px;
 }
 
 @media (max-width: 450px) {
@@ -396,6 +415,10 @@ a:target {
 }
 
 @media only screen and (max-width: 768px) {
+    .swiper {
+        height: 100%;
+    }
+
     .text_land .button_land {
         margin-top: 10px;
     }
@@ -411,6 +434,11 @@ a:target {
         margin-bottom: 20px;
         letter-spacing: 2px;
         line-height: 30px;
+    }
+
+    .hamburguer {
+        z-index: 99;
+        display: block;
     }
 
     .navbar {
